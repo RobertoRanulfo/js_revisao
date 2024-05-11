@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou ímpar</title>
+</head>
+<body>
+    <h2>Par ou ímpar</h2>
+    <input type="number" class="numero" placeholder="digite aqui o número">
+
+    <button onclick="parImpar()">Veja se é par ou ímpar</button>
+
+    <h2>E aí?</h2>
+
+    <div class="resultado">
+
+    </div>
+
+    <script>
+        
+
+        const parImpar = () =>{
+            const numero = document.querySelector('.numero').value;
+            let resultado = ''
+            numero % 2 === 0 ? (resultado = 'Par'):(resultado = 'Ímpar')  
+            console.log(resultado)
+            document.querySelector('.resultado').textContent = resultado
+        }
+
+    </script>
+//</body>
+</html>
