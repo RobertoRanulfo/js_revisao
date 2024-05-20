@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 8 - Somar os Elementos de um Array:
+        // Escreva uma função em JavaScript que receba um array de números como parâmetro e retorne a soma de todos os elementos do array.
+
+        const numeros = [1, 2, 3, 10];
+
+        const somaNumeros = (array) => {
+            let soma = 0;
+            array.forEach( n => {
+                soma += n
+            });
+
+            console.log(soma)
+        };
+
+        
+
+        somaNumeros(numeros);
+
+    </script>
+    
+</body>
+</html>

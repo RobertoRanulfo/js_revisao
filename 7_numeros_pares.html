@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 7 - Contar Números Pares:
+    Escreva uma função em JavaScript que receba um array de números como parâmetro e retorne o número de elementos pares no array. -->
+
+    <script>
+
+        const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        const apenasPar = (array) =>{
+            let somaPares = 0;
+            array.forEach( (n) => {
+                
+                if(n % 2 == 0){
+                    somaPares += 1
+                }
+
+            });
+            console.log(somaPares)
+
+
+        }
+
+        apenasPar(numeros);
+
+
+    </script>
+    
+</body>
+</html>
